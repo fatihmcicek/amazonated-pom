@@ -1,0 +1,1 @@
+# amazonated-pom
