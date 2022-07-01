@@ -11,6 +11,7 @@ public class TestClass extends BaseTest {
         homePage.
                 loadPage().
                 acceptCookies().
+                login().
                 textingSearchBox("macbook").
                 clickSearchButton().
                 isOnHomePage();
