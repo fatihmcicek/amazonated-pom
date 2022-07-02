@@ -10,10 +10,10 @@ public class TestClass extends BaseTest {
         HomePage homePage = new HomePage(driver);
         homePage.
                 loadPage().
+                isOnHomePage().
                 acceptCookies().
                 login().
                 textingSearchBox("macbook").
-                clickSearchButton().
-                isOnHomePage();
+                clickSearchButton();
     }
 }

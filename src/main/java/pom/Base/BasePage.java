@@ -14,9 +14,7 @@ public class BasePage {
         wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         this.driver = driver;
     }
-
     public void loadPage(String endPoint){
         driver.get("https://amazon.com.tr/" + endPoint);
     }
-
 }
