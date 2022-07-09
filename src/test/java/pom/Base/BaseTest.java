@@ -10,12 +10,12 @@ public class BaseTest {
     protected WebDriver driver;
 
     @BeforeMethod
-    public void initializeDriver(){
+    public void initializeDriver() {
         driver = new DriverManager().initializeDriver();
     }
 
-    @AfterMethod
-    public void quitDriver(){
-        driver.quit();
-    }
+//    @AfterMethod
+//    public void quitDriver() {
+//        driver.quit();
+//    }
 }
