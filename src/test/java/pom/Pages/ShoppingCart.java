@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 
 public class ShoppingCart extends BasePage {
 
-    private final By DELETE_PRODUCT = By.xpath("//*[@data-feature-id='delete']");
+    private final By DELETE_PRODUCT = By.cssSelector("input[value='Sil']");
     private final By BACK_TO_HOMEPAGE = By.xpath("//*[@id='nav-logo']");
 
     Logger logger = Logger.getLogger(HomePage.class.getName());
