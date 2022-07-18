@@ -6,14 +6,15 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import pom.Base.BasePage;
 
-import java.util.logging.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class HomePage extends BasePage {
     private final By COOKIE_LOCATOR = By.id("sp-cc-accept");
     private final By NAV_SEARCH_FIELD = By.id("twotabsearchtextbox");
     private final By NAV_SEARCH_SUBMIT_BUTTON = By.id("nav-search-submit-button");
 
-    Logger logger = Logger.getLogger(HomePage.class.getName());
+    Logger logger = LogManager.getLogger(HomePage.class);
 
     public HomePage(WebDriver driver) {
         super(driver);

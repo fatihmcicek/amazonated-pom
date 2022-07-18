@@ -5,7 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import pom.Base.BasePage;
 
-import java.util.logging.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class ProductPage extends BasePage {
 
@@ -15,7 +16,7 @@ public class ProductPage extends BasePage {
     private final By GO_TO_SHOPPING_CART = By.xpath("//*[@class=' nav-progressive-attribute']");
 
 
-    Logger logger = Logger.getLogger(HomePage.class.getName());
+    Logger logger = LogManager.getLogger(ProductPage.class);
 
     public ProductPage(WebDriver driver) {
         super(driver);

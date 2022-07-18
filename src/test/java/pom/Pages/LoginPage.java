@@ -5,7 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import pom.Base.BasePage;
 
-import java.util.logging.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class LoginPage extends BasePage {
 
@@ -15,7 +16,7 @@ public class LoginPage extends BasePage {
     private final By SEND_TEXT_PASSWORD = By.id("ap_password");
     private final By SIGN_IN_SUBMIT = By.id("signInSubmit");
 
-    Logger logger = Logger.getLogger(HomePage.class.getName());
+    Logger logger = LogManager.getLogger(LoginPage.class);
 
 
     public LoginPage(WebDriver driver) {

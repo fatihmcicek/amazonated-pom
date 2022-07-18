@@ -5,14 +5,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import pom.Base.BasePage;
 
-import java.util.logging.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class ShoppingCart extends BasePage {
 
     private final By DELETE_PRODUCT = By.cssSelector("input[value='Sil']");
     private final By BACK_TO_HOMEPAGE = By.xpath("//*[@id='nav-logo']");
 
-    Logger logger = Logger.getLogger(HomePage.class.getName());
+    Logger logger = LogManager.getLogger(ShoppingCart.class);
+
     public ShoppingCart(WebDriver driver) {
         super(driver);
     }
